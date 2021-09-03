@@ -1,0 +1,25 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jeferson Silva Santos Batista",
+  "license": "ISC"
+}
