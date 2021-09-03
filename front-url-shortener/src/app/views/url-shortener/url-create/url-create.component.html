@@ -1,0 +1,23 @@
+<div class="container1">
+    <h1>Cole a URL para ser encurtada</h1>
+</div>
+
+<div class="container2">
+    <BR>
+    <form [formGroup]="form" class="form">
+        <mat-form-field appearance="outline">
+            <input matInput formControlName="urlFull" type="text">
+            <mat-error
+                *ngIf="(form.get('urlFull')?.dirty || form.get('urlFull')?.touched) && form.get('urlFull') && form.get('urlFull')?.hasError('required')">
+                <div style="padding: 0px !important;" class="alert alert-danger" role="alert">
+                    Campo obrigatório.
+                </div>
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button (click)="createUrlShort()" color="primary">
+            Encurtar
+        </button>
+        <BR>
+        <h3> {{urlShort? 'URL encurtada: ' + urlShort :'' }}</h3>
+    </form>
+</div>

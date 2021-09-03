@@ -1,0 +1,22 @@
+.container1{
+
+    justify-content: center;
+    display: flex;
+    padding-top: 350px;
+  
+}
+.container2{
+
+    justify-content: center;
+    display: flex;
+
+  
+}
+mat-form-field{
+    width: 300px;
+}
+
+button{
+    height:40px;
+    margin: 4px;
+}
